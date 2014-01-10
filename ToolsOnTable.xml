@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf8"?>
+<world name="myworld1">
+<gravity x="0.0" y="-9.8" z="0.0"/> 
+
+
+
+<instanciate class="robot_test.xml">  
+
+    <set-attr-value name="name" value="robot_test"/>  
+    <set-attr-value name="language" value="c++"/>  
+    <set-attr-value name="implementation"  
+                    value="./LToolController.so"/>  
+  
+    <set-attr-value name="dynamics" value="true"/>  
+
+    <set-attr-value name="mass" value="4.5"/>  
+    <set-attr-value name="collision" value="true"/>  
+
+
+    <set-attr-value name="x" value="10.0"/>
+    <set-attr-value name="y" value="1.0"/>
+    <set-attr-value name="z" value="40.0"/>
+
+    <set-attr-value name="qw" value="0.707"/>
+    <set-attr-value name="qx" value="0.707"/>
+    <set-attr-value name="qy" value="0.0"/>
+    <set-attr-value name="qz" value="0.0"/>
+
+
+</instanciate>
+
+
+
+
+ <!-- <instanciate class="seBox.xml"> -->
+
+<instanciate class="robot_box.xml">
+
+   <set-attr-value name="name" value="box_001"/>  
+  
+   <set-attr-value name="mass" value="1.5"/>  
+   <set-attr-value name="language" value="c++"/>  
+<!--   <set-attr-value name="implementation"  
+                    value="./TobjectController.so"/> -->  
+  
+   <set-attr-value name="dynamics" value="true"/>
+   <set-attr-value name="collision" value="true"/>
+
+
+   <set-attr-value name="x" value="10.0"/>
+   <set-attr-value name="y" value="1.0"/>
+   <set-attr-value name="z" value="36.0"/>
+
+
+
+   <set-attr-value name="qw" value="0.707"/>
+   <set-attr-value name="qx" value="0.707"/>
+   <set-attr-value name="qy" value="0.0"/>
+   <set-attr-value name="qz" value="0.0"/>
+
+
+</instanciate>
+
+
+
+
+
+
+
+
+
+
+ <worldParam erp="0.5" cfm="1e-8" autostep="true" quickstep="false" stepsize="0.01"/>  
+  <collisionParam mu="0.9" mu2="0.02" slip1="0.01" slip2="0.01"  
+                  soft_erp="0.8" soft_cfm="0.00001" bounce="0.3" bounce_vel="5.0"/> 
+
+
+
+
+</world>
+
+
+
+
+
+
+
+
